@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 120rem;
+  margin: 3rem auto;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 13px;
+  overflow: hidden;
+  width: 100rem;
+  height: 60rem;
+  text-align: center;
+  position: relative;
+}
+
+.score {
+  text-align: center;
+  font-size: 7rem;
+  margin-bottom: 13rem;
+}
+
+.player {
+  padding: 7rem 14rem;
+  transition: all 0.3s;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.current-label {
+  background-color: #c7365f;
+  padding: 1.4rem 0;
+  border-radius: 9px;
+  color: #ddd;
+}
+
+.current-text {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+  font-weight: 500;
+}
+
+.player1--current,
+.player0--current {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+.btn {
+  width: 20rem;
+  position: absolute;
+  font-size: 3rem;
+  border: none;
+  padding: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 23232px;
+  right: 50%;
+  z-index: 3;
+  cursor: pointer;
+  transition: all 0.27s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn--new {
+  transform: translate(50%, 50%);
+}
+
+.btn--roll {
+  transform: translate(50%, 700%);
+}
+
+.btn--hold {
+  transform: translate(50%, 850%);
+}
+
+.dice {
+  width: 12rem;
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, 120%);
+}
+
+/* Using in JavaScript */
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.player--winer {
+  background-color: #2f2f2f;
+  transition: all 0.3s;
+}
+
+.hidden {
+  display: none;
+}
